@@ -1,5 +1,5 @@
 # Docker-Flask-Demo  
-Build a python-flask app image with Docker and push to Dockerhub using Jenkins CI/CD  
+Building a python-flask app image with Docker and pushing to Dockerhub using Jenkins CI/CD  
 
 ## To run/test the app manually on an ubuntu/debian server:  
 - Install python3, pip3 & flask  
