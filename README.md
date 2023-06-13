@@ -16,11 +16,11 @@ Build a python-flask app image with Docker and push to Dockerhub using Jenkins C
 - $ docker stop 'container-ID' (to stop container)  
 
 ## To containerize the app using Docker & push to Dockerhub using Jenkins:  
-- Install Jenkins on same server. See installation guide here(See here: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)  
-- In the Jenkins U.I, go to Manage Jenkins -> Credentials -> global -> Add Credentials:
- - Kind = ‘username & password’-> Enter your dockerhub account's username & password respectively  
- - id = ‘dockerhub’  
- - description = ‘dockerhub_credentials’. Save.  
+- Install Jenkins on same server. See installation guide [here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)  
+- On the Jenkins U.I, go to Manage Jenkins -> Credentials -> global -> Add Credentials :
+  - Kind = ‘username & password’-> Enter your dockerhub account's username & password respectively  
+  - id = ‘dockerhub’  
+  - Description = ‘dockerhub_credentials’. Save.  
 - Go to dashboard & create new item (pipeline project) -> Advanced Project Options -> Advanced -> Display Name = ‘Docker-Flask-App’  
 - Pipeline -> Pipeline SCM (enter github repo details). Save.  
 - Go to Manage Jenkins -> Manage Plugins -> Install ‘safe restart’ plugin  
