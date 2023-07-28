@@ -18,7 +18,7 @@ Illustration credit: https://linuxhowtoguide.blogspot.com/
 - $ docker run -d -p 8080:8080 flask-app (to run container)  
 - $ docker stop 'container-ID' (to stop container)  
 
-## To containerize the app using Docker & push to Dockerhub using Jenkins:  
+## To containerize & push app to Dockerhub with Jenkins:  
 - Install Jenkins on same server. See installation guide [here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu)  
 - On the Jenkins U.I, go to Manage Jenkins -> Credentials -> global -> Add Credentials :
   - Kind = ‘username & password’-> Enter your dockerhub account's username & password respectively  
